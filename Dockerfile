@@ -29,4 +29,4 @@ RUN echo y | apk add --allow-untrusted msodbcsql17_17.5.2.1-1_amd64.apk mssql-to
 
 # Adding SQL Server tools to $PATH
 ENV PATH=$PATH:/opt/mssql-tools/bin
-CMD /bin/sh
+CMD ["/bin/sh"]
