@@ -1,7 +1,13 @@
 # SQL Server Command Line Tools - custom image
 # From Alpine 3.11 (~5 MBs)
 FROM alpine:3.11
+
+# Labels
 LABEL maintainer="@dbamastery"
+LABEL org.label-schema.schema-version="1.0"
+LABEL org.label-schema.name="mssql-tools-alpine"
+LABEL org.label-schema.description="mssql-tools image alternative with Alpine"
+LABEL org.label-schema.url="http://dbamastery.com"
 
 # Installing system utilities
 RUN apk add --no-cache curl gnupg
