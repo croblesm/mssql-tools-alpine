@@ -3,7 +3,7 @@
 FROM alpine:3.11
 
 # Labels
-LABEL maintainer="@dbamastery"
+LABEL maintainer="crobles@dbamastery.com"
 LABEL org.label-schema.schema-version="1.0"
 LABEL org.label-schema.name="mssql-tools-alpine"
 LABEL org.label-schema.description="mssql-tools image alternative with Alpine"
