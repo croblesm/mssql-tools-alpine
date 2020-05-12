@@ -1,8 +1,8 @@
 # MSSQL Tools with Alpine
 
-Looking for a minimalistic SQLCMD (mssql-tools) container image? ```mssql-tools-alpine``` is definitively a very good alternative.
+Looking for a minimalistic **SQLCMD** (mssql-tools) container image? ```mssql-tools-alpine``` is definitively a very good alternative.
 
-This image size is ~17 MB, providing you the portability and agility you need to run queries on the fly.
+This image size is ~17 MB, providing you the portability and agility you need to run queries using **SQLCMD** on the fly.
 
 ## Examples
 
@@ -18,7 +18,7 @@ docker container run --rm -it mssql-tools-alpine sqlcmd -?
 
 ### Using SQLCMD through local network
 ```docker
-docker container run -it --network host mssql-alpine sqlcmd -S localhost,1500 -U sa -P '_SqLr0ck$_'
+docker container run -it --network host mssql-alpine sqlcmd -S <HOSTNAME|PORT> -U <USER> -P <PASSWORD>
 ```
 
 ## Questions?
